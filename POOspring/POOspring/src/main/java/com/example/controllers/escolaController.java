@@ -15,12 +15,12 @@ import com.example.POOspring.models.professor;
 
 import jakarta.validation.Valid;
 
-@RestController
+@GetController
 @RequestMapping("api/vi/escola")
 public class escolaController {
     public List<pessoa> pessoas = new ArrayList<>();
 
-    @RequestMapping("/listarAlunos")
+    @GetMapping("/listarAlunos")
     public List<aluno> listarAlunos(){
         List<aluno> alunos = new ArrayList<>();
         for(pessoa pessoa : pessoas){
@@ -31,7 +31,7 @@ public class escolaController {
         return alunos;
     } 
 
-    @RequestMapping("/listarProfessores")
+    @GettMapping("/listarProfessores")
     public List<professor> listarProfessores(){
         List<professor> professores = new ArrayList<>();
         for(pessoa pessoa : pessoas){
