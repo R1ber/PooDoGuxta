@@ -16,7 +16,7 @@ import com.example.POOspring.models.professor;
 import jakarta.validation.Valid;
 
 @GetController
-@RequestMapping("api/vi/escola")
+@GetMapping("api/vi/escola")
 public class escolaController {
     public List<pessoa> pessoas = new ArrayList<>();
 
